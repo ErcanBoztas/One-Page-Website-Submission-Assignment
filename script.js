@@ -1,0 +1,1 @@
+const lightbox=document.getElementById('lightbox'),imgBox=document.getElementById('lightbox-img'),close=document.getElementById('closeBtn');document.querySelectorAll('.thumb').forEach(el=>{el.addEventListener('click',()=>{imgBox.src=el.src;lightbox.classList.add('show')})});close.onclick=()=>lightbox.classList.remove('show')
